@@ -1,0 +1,266 @@
+img{
+    width: 100%;
+}
+section{
+padding: 30px 0;
+}
+.itc-slider{
+    width: 60%;
+    margin: 0 auto;
+}
+.header__menu{
+    position: absolute;
+    z-index: 1;
+    background-color:rgb(214, 33, 33) ;
+    width: 15%;
+    height: 70px;
+    padding: 20px 30px;
+    display: none;
+}
+.menu__list{
+    padding: 0;
+    list-style: none;
+    
+}
+.is-active{
+    display: block;
+    
+}
+.maps{
+    background-color: rgb(195, 255, 127);
+    padding: 50px
+}
+.maps__title{
+    text-align:center ;
+    font-size: 40px;
+}
+iframe{
+    width: 100%;
+}
+.googl__title , .yandex__title{
+text-align: center;
+font-size: 40px;
+}
+.googl__title{
+    text-align: center;
+font-size: 40px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: OldLace;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 50px;
+    color: rgb(120, 156, 221)
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: blueviolet;
+    width: 50%;
+}
+.nav__link{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(207, 159, 101);
+}
+.footer{
+    background: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__logo{
+    font-size: 50px;
+    color: rgb(120, 156, 221);
+}
+.footer__time{
+    font-size: 20px;
+    color: rgb(120, 156, 221);
+}
+.theme__white{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+.theme__dark{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    border: 1px solid white;
+}
+.theme__list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.theme__title{
+margin: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.burger__line{
+    width: 40px;
+    height: 3px;
+    background-color:rgb(120, 156, 221) ;
+    margin-bottom: 4px;
+    transition: all 2s ease-out;
+}
+.burger{
+    display: none;
+}
+
+
+@keyframes navlinkAnim{
+    from{
+        opacity: 0;
+        transform: translateX(15%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width:1000px){
+    body{
+        overflow-x: hidden;
+    }
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige ;
+    position: absolute;
+    right: 0;
+    top: 130px;
+    width: 150px;
+    transform: translateX(100%);
+    transition: transform 3s ease-out;
+    
+}
+.container{
+    max-width: 600px;
+}
+.burger{
+    display: block;
+    cursor: pointer;
+}
+.nav__list_active{
+    transform: translateX(0%);
+}
+.active .burger__line_1{
+transform: rotate(-45deg) translate(0px, 10px);
+}
+.active .burger__line_2{
+    opacity: 0;
+}
+.active .burger__line_3{
+    transform: rotate(45deg) translate(0px, -10px);
+}
+
+.nav__item{
+    opacity: 0;
+}
+}
+.clock{
+    background-color: chocolate;
+}
+.time{
+    font-size: 50px;
+    text-align: center;
+    color: blueviolet;
+}
+#myVideo{
+    width: 100%;
+}
+.video__content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0;
+}
+.video{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0;
+}
+.video{
+    position: relative;
+}
+.buttons__btn{
+    width: 100px;
+    font-size: 10px;
+    padding: 10px;
+    border: none;
+    background-color:rgb(120, 156, 221) ;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s ease;
+    
+    
+}
+.buttons__btn:hover{
+    background-color:blue ;
+    color: burlywood;
+}
+.basket{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 15px 20px;
+    background-color: rgb(68, 61, 61);
+    border-radius: 15px;
+    border: 4px;
+    cursor: pointer;
+
+}
+.basket__img{
+    width: 80%;
+    
+    
+}
+.price{
+    margin: 0;
+    text-align: center;
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
